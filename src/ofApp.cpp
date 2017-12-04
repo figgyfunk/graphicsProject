@@ -2,6 +2,9 @@
 ofShader shader;
 float bandsX; 
 float bandsY;
+float bandsR; 
+float bandsG; 
+float bandsB;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -21,6 +24,8 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+	bandsX = 0;
+	bandsY = 0;
 	float * value = ofSoundGetSpectrum(bands);
 	for (int i = 0; i < bands; i++)
 	{
@@ -38,19 +43,30 @@ void ofApp::update(){
 	{
 		bandsY += fftSmooth[i];
 	}
+	for (int i =0 ; i < 21; i++)
+	{
+		bandsR += fftSmooth[i];
+	}
+	for (int i = 21; i < 42; i++)
+	{
+		bandsG += fftSmooth[i];
+	}
+	for (int i = 42; i < 64; i++)
+	{
+		bandsB += fftSmooth[i];
+	}
 
-	std::cout << bandsX << std::endl;
-	std::cout << bandsY << std::endl;
+
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	ofSetColor(ofColor().black);
+	ofSetColor(ofColor(bandsR*100,bandsG*100,bandsB*100));
 
 	shader.begin();
 	shader.setUniform1f("timeValX", bandsX);
 	shader.setUniform1f("timeValY", bandsY );
-	ofDrawSphere(ofGetWidth()/2, ofGetHeight()/2, 100);
+	ofDrawSphere(ofGetWidth()/2, ofGetHeight()/2, 150);
 	shader.end();
 }
 
