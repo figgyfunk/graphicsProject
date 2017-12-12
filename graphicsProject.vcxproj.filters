@@ -7,6 +7,7 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+<<<<<<< HEAD
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
@@ -37,11 +38,14 @@
 		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp">
 			<Filter>addons\ofxGui\src</Filter>
 		</ClCompile>
+=======
+>>>>>>> a4c6c43ed7978561fd8f10a2999e14ae941b8a77
 	</ItemGroup>
 	<ItemGroup>
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
+<<<<<<< HEAD
 		<Filter Include="addons">
 			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
 		</Filter>
@@ -51,11 +55,14 @@
 		<Filter Include="addons\ofxGui\src">
 			<UniqueIdentifier>{645E9533-4DCD-6179-1CDF-CB65}</UniqueIdentifier>
 		</Filter>
+=======
+>>>>>>> a4c6c43ed7978561fd8f10a2999e14ae941b8a77
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
+<<<<<<< HEAD
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
@@ -86,6 +93,8 @@
 		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h">
 			<Filter>addons\ofxGui\src</Filter>
 		</ClInclude>
+=======
+>>>>>>> a4c6c43ed7978561fd8f10a2999e14ae941b8a77
 	</ItemGroup>
 	<ItemGroup>
 		<ResourceCompile Include="icon.rc" />
